@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dash_cam/Coffee_prefs.dart';
+import 'package:dash_cam/styled-boody.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -21,7 +22,7 @@ class Home extends StatelessWidget {
             
             color:Colors.brown[300],            
             padding:EdgeInsets.all(20),
-            child: Text("How I Like My Coffee ...",style: TextStyle(fontSize: 17)),
+            child: Styledboody("How I Like My Cooffe.."),
           ),
           Container(
             

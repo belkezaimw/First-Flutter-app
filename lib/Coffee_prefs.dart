@@ -1,3 +1,5 @@
+import 'package:dash_cam/styled-boody.dart';
+import 'package:dash_cam/styled-button.dart';
 import 'package:flutter/material.dart';
 
 
@@ -39,18 +41,18 @@ print("inc sokor by wa7ed");
       children: [
         Row(children: [
           
-          Text("Strenght : ",style: TextStyle(fontSize: 17),),
+          Styledboody("strenght:"),
           //SizedBox(width: 10,),
           Text("",style: TextStyle(fontSize: 17),),
           for (int i = 0 ;i < Strenght;i++)
               Image.asset('assets/img/coffee_bean.png',width: 25,color: Colors.brown[100],colorBlendMode: BlendMode.multiply,),
           
           Expanded(child: SizedBox()),
-          ElevatedButton(onPressed: increasestrenght, style: ElevatedButton.styleFrom(),child:Text("+") ,),
+          StyledButton(child: Text("+"), onPressed: increasestrenght),
         ],),
         Row(    children: [
 
-          Text("Sugars : ",style: TextStyle(fontSize: 17),),
+          Styledboody("Sugars :"),
           //SizedBox(width: 10,),
                     if(sugar==0)
               const Text("no sugar......",style: TextStyle(fontSize: 17),),
@@ -58,7 +60,7 @@ print("inc sokor by wa7ed");
           for (int i = 0 ;i < sugar;i++)
           Image.asset('assets/img/sugar_cube.png',width: 25,color: Colors.brown[100],colorBlendMode: BlendMode.multiply,),
           Expanded(child: SizedBox()),
-          ElevatedButton(onPressed: increasesugar, child:Text("+") ,),
+          StyledButton(child: Text("+"), onPressed: increasesugar),
 
           ]     
            ),
